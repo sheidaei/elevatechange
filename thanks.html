@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You — Elevate Change Inc.</title>
+  <meta
+    name="description"
+    content="Thank you for contacting Elevate Change Inc. We have received your message and will respond shortly."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .thanks-section {
+      min-height: calc(100vh - 170px);
+      display: flex;
+      align-items: center;
+      padding: 4rem 0;
+      background: radial-gradient(circle at top right, #fef3c7 0%, #ffffff 55%);
+    }
+    .thanks-card {
+      max-width: 620px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 2.75rem 2.25rem;
+      box-shadow: var(--shadow-md);
+      text-align: center;
+    }
+    .thanks-icon {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 1.25rem;
+      border-radius: 14px;
+      background: var(--accent-soft);
+      color: var(--accent-ink);
+      display: grid;
+      place-items: center;
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+    .thanks-card h1 {
+      font-size: clamp(1.75rem, 3vw, 2.25rem);
+      margin-bottom: 0.75rem;
+    }
+    .thanks-card p {
+      font-size: 1.02rem;
+      margin-bottom: 1.75rem;
+    }
+    .thanks-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand" aria-label="Elevate Change Home">
+        <span class="brand-mark">EC</span>
+        <span class="brand-text">
+          <strong>Elevate Change</strong>
+          <small>Elevating With a Smile!</small>
+        </span>
+      </a>
+
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-primary btn-sm">Back to Home</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="thanks-section">
+      <div class="container">
+        <div class="thanks-card">
+          <div class="thanks-icon" aria-hidden="true">&#10003;</div>
+          <div class="eyebrow">Message Sent</div>
+          <h1>Thank You for Reaching Out!</h1>
+          <p>
+            We've received your submission and will follow up shortly from
+            <strong>info@elevatechange.net</strong>.
+          </p>
+          <div class="thanks-actions">
+            <a href="index.html" class="btn btn-primary">Back to Homepage</a>
+            <a href="index.html#ai-advantage" class="btn btn-secondary">Explore AI Transformation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Elevate Change Inc.</strong>
+        <p>Elevating With a Smile! &bull; Toronto / Durham Region, Canada</p>
+      </div>
+      <p class="copyright">&copy; <span id="year"></span> Elevate Change Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const yearEl = document.getElementById("year");
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+</html>
