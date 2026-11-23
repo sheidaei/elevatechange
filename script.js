@@ -46,62 +46,47 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Newsletter Form -> info@elevatechange.net
+  // Newsletter Form Validation -> submits natively to Un-static Forms
   const newsletterForm = document.getElementById("newsletter-form");
   const newsletterFeedback = document.getElementById("newsletter-feedback");
 
   if (newsletterForm && newsletterFeedback) {
     newsletterForm.addEventListener("submit", (event) => {
-      event.preventDefault();
       const emailInput = document.getElementById("newsletter-email");
       const email = emailInput.value.trim();
 
       if (!email || !email.includes("@")) {
+        event.preventDefault();
         newsletterFeedback.textContent = "Please enter a valid email address.";
         newsletterFeedback.className = "form-feedback error";
         return;
       }
 
-      const subject = encodeURIComponent("New Newsletter Subscriber — Elevate Change");
-      const body = encodeURIComponent(`Please subscribe me to the Continuous Improvement Newsletter.\n\nEmail: ${email}`);
-      window.location.href = `mailto:info@elevatechange.net?subject=${subject}&body=${body}`;
-
-      newsletterFeedback.textContent =
-        "Opening your email client to send your subscription to info@elevatechange.net.";
+      newsletterFeedback.textContent = "Submitting your subscription...";
       newsletterFeedback.className = "form-feedback success";
-      newsletterForm.reset();
     });
   }
 
-  // Contact Form -> info@elevatechange.net
+  // Contact Form Validation -> submits natively to Un-static Forms
   const contactForm = document.getElementById("contact-form");
   const contactFeedback = document.getElementById("contact-feedback");
 
   if (contactForm && contactFeedback) {
     contactForm.addEventListener("submit", (event) => {
-      event.preventDefault();
       const name = document.getElementById("contact-name").value.trim();
       const email = document.getElementById("contact-email").value.trim();
-      const topicSelect = document.getElementById("contact-topic");
-      const topic = topicSelect.options[topicSelect.selectedIndex].text;
       const message = document.getElementById("contact-message").value.trim();
 
       if (!name || !email || !email.includes("@") || !message) {
+        event.preventDefault();
         contactFeedback.textContent =
           "Please fill in your name, a valid email, and a message.";
         contactFeedback.className = "form-feedback error";
         return;
       }
 
-      const subject = encodeURIComponent(`Elevate Change Inquiry: ${topic}`);
-      const body = encodeURIComponent(
-        `Name: ${name}\nEmail: ${email}\nArea of Interest: ${topic}\n\nMessage:\n${message}`
-      );
-      window.location.href = `mailto:info@elevatechange.net?subject=${subject}&body=${body}`;
-
-      contactFeedback.textContent = `Thank you, ${name}! Opening your email client to send this to info@elevatechange.net.`;
+      contactFeedback.textContent = "Sending your message...";
       contactFeedback.className = "form-feedback success";
-      contactForm.reset();
     });
   }
 });
