@@ -4,11 +4,11 @@ A modern, Git-based website redesign for **Elevate Change Inc.** ([elevatechange
 
 ## Key Improvements Over `elevatechange.co`
 
-- **Cleaner Information Architecture**: Consolidated sprawling dropdown menus into six clear sections (`Approach`, `Services`, `Programs`, `Podcast & Speaking`, `Clients`, `Contact`).
-- **Polished, Typo-Free Copy**: Fixed legacy typos (`Build Succeess`, `Testomonials`, stray WordPress shortcodes) and sharpened the messaging around measurable Agile, Lean, and Kanban outcomes.
-- **Interactive Flagship Programs**: Added a tabbed showcase for *Elevate to Coach*, *Agile & Digital Transformation*, and *Community Building*.
-- **Training & Podcast Spotlight**: Surfaced Certified Kanban Training tracks (TKP, KSD, KSI) and recent *Lean On Agile Show* episodes.
-- **Zero-Dependency Static Architecture**: Pure HTML5, CSS3, and vanilla ES6+ JavaScript—instant load times, responsive mobile navigation, and ready for GitHub Pages, Netlify, or Vercel.
+- **AI-Era Transformation Positioning**: Added a dedicated *AI Transformation Gap* section grounded in industry benchmarks (McKinsey, Bain & Company, CGI, OG1O) plus five differentiating pillars: Flow-First Workflow Redesign, Human-Led / Agent-Orchestrated Teams, Trust & Psychological Safety, Minimum Lovable Governance, and Outcome-Driven AI Metrics.
+- **Cleaner Information Architecture**: Consolidated sprawling dropdown menus into clear sections (`AI Transformation`, `Approach`, `Services`, `Programs`, `Podcast & Speaking`, `About`, and `Contact`).
+- **Polished, Typo-Free Copy**: Fixed legacy typos (`Build Succeess`, `Testomonials`, stray WordPress shortcodes) and sharpened the messaging around measurable Agile, Lean, Kanban, and AI outcomes.
+- **Interactive Flagship Programs**: Added a tabbed showcase for *Elevate to Coach*, *AI & Digital Transformation*, and *Building Communities*.
+- **Zero-Dependency Static Architecture**: Pure HTML5, CSS3, and vanilla ES6+ JavaScript—instant load times and ready for GitHub Pages, Netlify, or Vercel.
 
 ## Project Structure
 
